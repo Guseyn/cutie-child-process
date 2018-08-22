@@ -17,7 +17,7 @@ const {
 ```
 For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/) for <b>process</b> module.
 
-| Async Object  | Async/sync call | Parameters | Representation result |
+| Async Object  | Async/sync call | Parameters(default value/description) | Representation result |
 | ------------- | ----------------| ---------- | --------------------- |
 | `Channel` | `childProcess.channel` | `childProcess` | `object\|undefined` |
 | `ChildProcessWithCloseEvent` | `childProcess.on('close', event)` | `childProcess, event(Event with definedBody(code, signal))` | `childProcess` |
