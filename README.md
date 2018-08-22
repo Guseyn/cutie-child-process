@@ -19,20 +19,27 @@ For more information about parameters in the async objects visit [docs of Node](
 
 | Async Object  | Async/sync call | Parameters | Representation result |
 | ------------- | ----------------| ---------- | --------------------- |
-| Channel | childProcess.channel | childProcess | object\|undefined |
-| ChildProcessWithCloseEvent | childProcess.on('close', event) | childProcess, event(Event with definedBody(code, signal)) | childProcess |
-| ChildProcessWithDisconnectEvent | childProcess.on('disconnect', event) | childProcess, event(Event with definedBody()) | childProcess |
-| ChildProcessWithErrorEvent | childProcess.on('error', event) | childProcess, event(Event with definedBody(error)) | childProcess |
-| ChildProcessWithExitEvent | childProcess.on('exit', event) | childProcess, event(Event with definedBody(code, signal)) | childProcess |
-| ChildProcessWithMessageEvent | childProcess.on('message', event) | childProcess, event(Event with definedBody(message, sendHandle)) | childProcess |
-| Executed | exec | command[, options][, callback] | childProcess |
-| FileExecuted | execFile | file[,args][, options][, callback] | childProcess |
-| Forked | fork | modulePath[,args][, options] | childProcess |
-|||||
-|||||
-|||||
-|||||
-
+| `Channel` | `childProcess.channel` | `childProcess` | `object\|undefined` |
+| `ChildProcessWithCloseEvent` | `childProcess.on('close', event)` | `childProcess, event(Event with definedBody(code, signal))` | `childProcess` |
+| `ChildProcessWithDisconnectEvent` | `childProcess.on('disconnect', event)` | `childProcess, event(Event with definedBody())` | `childProcess` |
+| `ChildProcessWithErrorEvent` | `childProcess.on('error', event)` | `childProcess, event(Event with definedBody(error))` | `childProcess` |
+| `ChildProcessWithExitEvent` | `childProcess.on('exit', event)` | `childProcess, event(Event with definedBody(code, signal))` | `childProcess` |
+| `ChildProcessWithMessageEvent` | `childProcess.on('message', event)` | `childProcess, event(Event with definedBody(message, sendHandle))` | `childProcess` |
+| `Executed` | `exec` | `command[, options][, callback]` | `childProcess` |
+| `FileExecuted` | `execFile` | `file[,args][, options][, callback]` | `childProcess` |
+| `Forked` | `fork` | `modulePath[,args][, options]` | `childProcess` |
+| `IsConnected` | `childProcess.connected` | `childProcess` | `boolean` |
+| `IsKilled` | `childProcess.killed` | `childProcess` | `boolean` |
+| `KilledChildProcess` | `childProcess.kill` | `childProcess` | `childProcess` |
+| `Pid` | `childProcess.pid` | `childProcess` | `number` |
+| `ResultFromExecutedSync` | `execSync` | `command[,args][,options]` | `buffer\|string` |
+| `ResultFromFileExecutedSync` | `execFileSync` | `file[,args][,options]` | `buffer\|string` |
+| `ResultObjectFromSpawnedSync` | `spawnSync` | `command[,args][,options]` | `object` |
+| `SentMessage` | `childProcess.send` | `childProcess, message, sendHandle, options` | `message` |
+| `Spawned` | `spawn` | `command[,args][,options]` | `childProcess` |
+| `StdErr` | `childProcess.stderr` | `childProcess` | `stream` |
+| `StdIn` | `childProcess.stdin` | `childProcess` | `stream` |
+| `StdOut` | `childProcess.stdout` | `childProcess` | `stream` |
 
 [npm-image]: https://img.shields.io/npm/v/@guseyn/cutie-child-process.svg
 [npm-url]: https://npmjs.org/package/@guseyn/cutie-child-process
