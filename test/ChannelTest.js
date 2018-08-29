@@ -2,13 +2,13 @@
 
 const {
   as
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   IsUndefined
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   Channel,
   Executed,

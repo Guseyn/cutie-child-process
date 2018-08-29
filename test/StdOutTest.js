@@ -5,16 +5,16 @@ const {
 } = require('stream');
 const {
   as
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   Event
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   Is
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   Executed,
   StdOut,
