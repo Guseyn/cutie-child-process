@@ -13,7 +13,7 @@ You can find examples of using this library in the [test directory](https://gith
 ```js
 const {
   // Needed async objects here from the table below
-} = require('@guseyn/cutie-child-process');
+} = require('@cuties/child-process');
 ```
 For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/) for <b>process</b> module.
 
@@ -41,5 +41,5 @@ For more information about parameters in the async objects visit [docs of Node](
 | `StdIn` | `childProcess.stdin` | `childProcess` | `stream` |
 | `StdOut` | `childProcess.stdout` | `childProcess` | `stream` |
 
-[npm-image]: https://img.shields.io/npm/v/@guseyn/cutie-child-process.svg
-[npm-url]: https://npmjs.org/package/@guseyn/cutie-child-process
+[npm-image]: https://img.shields.io/npm/v/@cuties/child-process.svg
+[npm-url]: https://npmjs.org/package/@cuties/child-process

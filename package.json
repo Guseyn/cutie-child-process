@@ -1,6 +1,6 @@
 {
-  "name": "@guseyn/cutie-child-process",
-  "version": "1.0.0",
+  "name": "@cuties/child-process",
+  "version": "1.0.1",
   "description": "Cutie extension for child-process module in Node.",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,10 @@
     "process"
   ],
   "dependencies": {
-    "@guseyn/cutie": "1.4.0",
-    "@guseyn/cutie-assert": "1.1.0",
-    "@guseyn/cutie-is": "1.0.3",
-    "test-executor": "1.0.8"
+    "@cuties/cutie": "1.4.3",
+    "@cuties/assert": "1.1.4",
+    "@cuties/is": "1.0.6",
+    "test-executor": "1.1.0"
   },
   "author": "guseyn",
   "license": "MIT",

@@ -2,13 +2,13 @@
 
 const {
   as
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   IsString
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   SentMessage,
   Forked,
