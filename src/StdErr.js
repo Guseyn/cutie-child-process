@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is stream
 class StdErr extends AsyncObject {
-
-  constructor(childProcess) {
-    super(childProcess);
+  constructor (childProcess) {
+    super(childProcess)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (childProcess) => {
-      return childProcess.stderr;
+      return childProcess.stderr
     }
   }
-
 }
 
-module.exports = StdErr;
+module.exports = StdErr

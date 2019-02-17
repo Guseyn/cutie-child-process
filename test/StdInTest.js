@@ -2,26 +2,23 @@
 
 const {
   Readable
-} = require('stream');
+} = require('stream')
 const {
   as
-} = require('@cuties/cutie');
-const {
-  Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Executed,
   StdIn,
   KilledChildProcess
-} = require('./../index');
+} = require('./../index')
 
-let lsCallback = (error, stdout, stderr) => {
+let lsCallback = (/* error, stdout, stderr */) => {
   // do smth
 }
 
@@ -33,4 +30,4 @@ new Assertion(
   )
 ).after(
   new KilledChildProcess(as('cp'))
-).call();
+).call()

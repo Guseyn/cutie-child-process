@@ -2,13 +2,13 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsObject
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   ResultObjectFromSpawnedSync
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsObject(
@@ -16,4 +16,4 @@ new Assertion(
       'ls'
     )
   )
-).call();
+).call()

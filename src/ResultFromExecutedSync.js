@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
-const { execSync } = require('child_process');
+const AsyncObject = require('@cuties/cutie').AsyncObject
+const { execSync } = require('child_process')
 
 // Represented result is buffer | string
 class StdOutFromExecutedSync extends AsyncObject {
-
-  //...args are args and options
-  constructor(command, ...args) {
-    super(command, ...args);
+  // ...args are args and options
+  constructor (command, ...args) {
+    super(command, ...args)
   }
 
-  definedSyncCall() {
-    return execSync;
+  definedSyncCall () {
+    return execSync
   }
-
 }
 
-module.exports = StdOutFromExecutedSync;
+module.exports = StdOutFromExecutedSync

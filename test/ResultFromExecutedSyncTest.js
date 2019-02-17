@@ -2,15 +2,13 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
-  ResultFromExecutedSync,
-  KilledChildProcess,
-  Pid
-} = require('./../index');
+  ResultFromExecutedSync
+} = require('./../index')
 
 new Assertion(
   new Is(
@@ -18,4 +16,4 @@ new Assertion(
       'ls'
     ), Buffer
   )
-).call();
+).call()
