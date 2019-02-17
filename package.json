@@ -1,6 +1,6 @@
 {
   "name": "@cuties/child-process",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cutie extension for child-process module in Node.",
   "main": "index.js",
   "scripts": {
