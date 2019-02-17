@@ -2,22 +2,18 @@
 
 const {
   as
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsString
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   SentMessage,
   Forked,
   KilledChildProcess
-} = require('./../index');
-
-let lsCallback = (error, stdout, stderr) => {
-  // do smth
-}
+} = require('./../index')
 
 new Assertion(
   new IsString(
@@ -28,4 +24,4 @@ new Assertion(
   )
 ).after(
   new KilledChildProcess(as('cp'))
-).call();
+).call()

@@ -2,15 +2,13 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
-  ResultFromFileExecutedSync,
-  KilledChildProcess,
-  Pid
-} = require('./../index');
+  ResultFromFileExecutedSync
+} = require('./../index')
 
 new Assertion(
   new Is(
@@ -18,4 +16,4 @@ new Assertion(
       'node', ['--version']
     ), Buffer
   )
-).call();
+).call()

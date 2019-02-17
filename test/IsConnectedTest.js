@@ -2,27 +2,24 @@
 
 const {
   as
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   ChildProcess
-} = require('child_process');
+} = require('child_process')
 const {
   Assertion
-} = require('@cuties/assert');
-const {
-  IsBoolean
-} = require('@cuties/is');
+} = require('@cuties/assert')
 const {
   Forked,
   IsConnected,
   KilledChildProcess
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsConnected(
-    new Forked('./src/Forked.js').as('cp'), 
+    new Forked('./src/Forked.js').as('cp'),
     ChildProcess
   )
 ).after(
   new KilledChildProcess(as('cp'))
-).call();
+).call()

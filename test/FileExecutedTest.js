@@ -2,25 +2,22 @@
 
 const {
   as
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   ChildProcess
-} = require('child_process');
-const {
-  Event
-} = require('@cuties/cutie');
+} = require('child_process')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   FileExecuted,
   KilledChildProcess
-} = require('./../index');
+} = require('./../index')
 
-let lsCallback = (error, stdout, stderr) => {
+let lsCallback = (/* error, stdout, stderr */) => {
   // do smth
 }
 
@@ -31,4 +28,4 @@ new Assertion(
   )
 ).after(
   new KilledChildProcess(as('cp'))
-).call();
+).call()

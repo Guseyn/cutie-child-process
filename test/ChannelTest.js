@@ -2,20 +2,20 @@
 
 const {
   as
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsUndefined
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Channel,
   Executed,
   KilledChildProcess
-} = require('./../index');
+} = require('./../index')
 
-let lsCallback = (error, stdout, stderr) => {
+let lsCallback = (/* error, stdout, stderr */) => {
   // do smth
 }
 
@@ -27,4 +27,4 @@ new Assertion(
   )
 ).after(
   new KilledChildProcess(as('cp'))
-).call();
+).call()
