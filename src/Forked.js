@@ -10,7 +10,7 @@ class Forked extends AsyncObject {
     super(modulePath, ...args)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return fork
   }
 }

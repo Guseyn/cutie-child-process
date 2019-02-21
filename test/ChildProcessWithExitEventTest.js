@@ -30,7 +30,7 @@ class ExitEvent extends Event {
     super()
   }
 
-  definedBody (/* code, signal */) {
+  body (/* code, signal */) {
     // handle
   }
 }

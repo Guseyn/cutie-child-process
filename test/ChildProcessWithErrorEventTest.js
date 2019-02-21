@@ -30,7 +30,7 @@ class ErrorEvent extends Event {
     super()
   }
 
-  definedBody (/* error */) {
+  body (/* error */) {
     // handle
   }
 }

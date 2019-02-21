@@ -8,8 +8,8 @@ class ChildProcessWithExitEvent extends AsyncObject {
     super(childProcess, event)
   }
 
-  // event is an Event with definedBody(code, signal)
-  definedSyncCall () {
+  // event is an Event with body(code, signal)
+  syncCall () {
     return (childProcess, event) => {
       childProcess.on('exit', event)
       return childProcess

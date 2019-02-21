@@ -8,7 +8,7 @@ class Channel extends AsyncObject {
     super(childProcess)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (childProcess) => {
       return childProcess.channel
     }

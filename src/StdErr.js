@@ -8,7 +8,7 @@ class StdErr extends AsyncObject {
     super(childProcess)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (childProcess) => {
       return childProcess.stderr
     }

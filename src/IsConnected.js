@@ -8,7 +8,7 @@ class IsConnected extends AsyncObject {
     super(childProcess)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (childProcess) => {
       return childProcess.connected
     }

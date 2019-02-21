@@ -4,12 +4,12 @@ const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is childProcess
 class ChildProcessWithErrorEvent extends AsyncObject {
-  // event is an Event with definedBody(error)
+  // event is an Event with body(error)
   constructor (childProcess, event) {
     super(childProcess, event)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (childProcess, event) => {
       childProcess.on('error', event)
       return childProcess

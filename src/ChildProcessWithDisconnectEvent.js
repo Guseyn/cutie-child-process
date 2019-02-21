@@ -4,12 +4,12 @@ const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is childProcess
 class ChildProcessWithDisconnectEvent extends AsyncObject {
-  // event is an Event with definedBody()
+  // event is an Event with body()
   constructor (childProcess, event) {
     super(childProcess, event)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (childProcess, event) => {
       childProcess.on('disconnect', event)
       return childProcess

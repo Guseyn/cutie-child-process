@@ -8,7 +8,7 @@ class StdOut extends AsyncObject {
     super(childProcess)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (childProcess) => {
       return childProcess.stdout
     }
