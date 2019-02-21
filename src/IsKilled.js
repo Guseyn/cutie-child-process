@@ -8,7 +8,7 @@ class IsKilled extends AsyncObject {
     super(childProcess)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (childProcess) => {
       return childProcess.killed
     }

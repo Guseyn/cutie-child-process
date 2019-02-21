@@ -8,8 +8,8 @@ class ChildProcessWithMessageEvent extends AsyncObject {
     super(childProcess, event)
   }
 
-  // event is an Event with definedBody(message, sendHandle)
-  definedSyncCall () {
+  // event is an Event with body(message, sendHandle)
+  syncCall () {
     return (childProcess, event) => {
       childProcess.on('message', event)
       return childProcess

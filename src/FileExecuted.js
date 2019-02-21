@@ -10,7 +10,7 @@ class FileExecuted extends AsyncObject {
     super(file, ...args)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return execFile
   }
 }

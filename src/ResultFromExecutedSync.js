@@ -10,7 +10,7 @@ class StdOutFromExecutedSync extends AsyncObject {
     super(command, ...args)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return execSync
   }
 }

@@ -10,7 +10,7 @@ class StdOutFromFileExecutedSync extends AsyncObject {
     super(file, ...args)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return execFileSync
   }
 }
